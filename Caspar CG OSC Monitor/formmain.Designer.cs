@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.splitContainerToolbarLogs = new System.Windows.Forms.SplitContainer();
+            this.checkBoxFilterStage = new System.Windows.Forms.CheckBox();
+            this.checkBoxFilterOutputConsume = new System.Windows.Forms.CheckBox();
+            this.checkBoxFilterMixer = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonStartStopServer = new System.Windows.Forms.Button();
             this.numericUpDownOSCPort = new System.Windows.Forms.NumericUpDown();
@@ -38,9 +41,6 @@
             this.Data1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Data2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Data3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.checkBoxFilterMixer = new System.Windows.Forms.CheckBox();
-            this.checkBoxFilterOutputConsume = new System.Windows.Forms.CheckBox();
-            this.checkBoxFilterStage = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerToolbarLogs)).BeginInit();
             this.splitContainerToolbarLogs.Panel1.SuspendLayout();
             this.splitContainerToolbarLogs.Panel2.SuspendLayout();
@@ -72,6 +72,42 @@
             this.splitContainerToolbarLogs.Size = new System.Drawing.Size(1205, 469);
             this.splitContainerToolbarLogs.SplitterDistance = 70;
             this.splitContainerToolbarLogs.TabIndex = 0;
+            // 
+            // checkBoxFilterStage
+            // 
+            this.checkBoxFilterStage.AutoSize = true;
+            this.checkBoxFilterStage.Checked = true;
+            this.checkBoxFilterStage.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxFilterStage.Location = new System.Drawing.Point(755, 12);
+            this.checkBoxFilterStage.Name = "checkBoxFilterStage";
+            this.checkBoxFilterStage.Size = new System.Drawing.Size(159, 24);
+            this.checkBoxFilterStage.TabIndex = 5;
+            this.checkBoxFilterStage.Text = "/channel/*/stage/*";
+            this.checkBoxFilterStage.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFilterOutputConsume
+            // 
+            this.checkBoxFilterOutputConsume.AutoSize = true;
+            this.checkBoxFilterOutputConsume.Checked = true;
+            this.checkBoxFilterOutputConsume.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxFilterOutputConsume.Location = new System.Drawing.Point(453, 40);
+            this.checkBoxFilterOutputConsume.Name = "checkBoxFilterOutputConsume";
+            this.checkBoxFilterOutputConsume.Size = new System.Drawing.Size(263, 24);
+            this.checkBoxFilterOutputConsume.TabIndex = 4;
+            this.checkBoxFilterOutputConsume.Text = "/channel/*/output/consume_time";
+            this.checkBoxFilterOutputConsume.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFilterMixer
+            // 
+            this.checkBoxFilterMixer.AutoSize = true;
+            this.checkBoxFilterMixer.Checked = true;
+            this.checkBoxFilterMixer.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxFilterMixer.Location = new System.Drawing.Point(453, 12);
+            this.checkBoxFilterMixer.Name = "checkBoxFilterMixer";
+            this.checkBoxFilterMixer.Size = new System.Drawing.Size(156, 24);
+            this.checkBoxFilterMixer.TabIndex = 3;
+            this.checkBoxFilterMixer.Text = "/channel/*/mixer/*";
+            this.checkBoxFilterMixer.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -158,36 +194,6 @@
             // 
             this.Data3.HeaderText = "Data 3";
             this.Data3.Name = "Data3";
-            // 
-            // checkBoxFilterMixer
-            // 
-            this.checkBoxFilterMixer.AutoSize = true;
-            this.checkBoxFilterMixer.Location = new System.Drawing.Point(453, 12);
-            this.checkBoxFilterMixer.Name = "checkBoxFilterMixer";
-            this.checkBoxFilterMixer.Size = new System.Drawing.Size(156, 24);
-            this.checkBoxFilterMixer.TabIndex = 3;
-            this.checkBoxFilterMixer.Text = "/channel/*/mixer/*";
-            this.checkBoxFilterMixer.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFilterOutputConsume
-            // 
-            this.checkBoxFilterOutputConsume.AutoSize = true;
-            this.checkBoxFilterOutputConsume.Location = new System.Drawing.Point(453, 40);
-            this.checkBoxFilterOutputConsume.Name = "checkBoxFilterOutputConsume";
-            this.checkBoxFilterOutputConsume.Size = new System.Drawing.Size(263, 24);
-            this.checkBoxFilterOutputConsume.TabIndex = 4;
-            this.checkBoxFilterOutputConsume.Text = "/channel/*/output/consume_time";
-            this.checkBoxFilterOutputConsume.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFilterStage
-            // 
-            this.checkBoxFilterStage.AutoSize = true;
-            this.checkBoxFilterStage.Location = new System.Drawing.Point(755, 12);
-            this.checkBoxFilterStage.Name = "checkBoxFilterStage";
-            this.checkBoxFilterStage.Size = new System.Drawing.Size(159, 24);
-            this.checkBoxFilterStage.TabIndex = 5;
-            this.checkBoxFilterStage.Text = "/channel/*/stage/*";
-            this.checkBoxFilterStage.UseVisualStyleBackColor = true;
             // 
             // formMain
             // 
